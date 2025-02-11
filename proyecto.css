@@ -1,0 +1,51 @@
+#p1{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color:white;
+    margin: 0;
+    padding: 0;
+    background-color: #3a0606;
+}
+#p2{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color:#a6a6a6;
+    margin: 0;
+    padding: 0;
+    background-color: #3a0606;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:#3a0606;
+    font-family: 'Playfair Display', serif;
+}
+header img {
+    
+    background-color: #3a0606;
+    max-height: 100px;
+    margin: 10px;
+}
+.content {
+    padding: 30px;
+    background-color: #3a0606;
+    font-family: 'Playfair Display', serif;
+}
+.contact-info {
+    margin-top: 40px;
+    background-color: #3a0606;
+    font-family: 'Playfair Display', serif;
+}
+.contact-info h2 {
+    text-align: center;
+    background-color: #3a0606;
+    font-family: 'Playfair Display', serif;
+}
+.contact-info p {
+    font-size: 20px;
+    text-align: center;
+    background-color: #3a0606;
+    font-family: 'Playfair Display', serif;
+}
+
+
