@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>UTA - FISEI</title>
+  <link rel="stylesheet" href="pagina8.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #940808, #852323);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background: #330404;
+      color: white;
+      animation: headerAnim 5s infinite alternate;
+    }
+
+    @keyframes headerAnim {
+      0% { background-color: #8d2525; }
+      50% { background-color: #af1212; }
+      100% { background-color: #4d1114; }
+    }
+
+    .logo-container {
+      margin: 20px auto;
+      width: 150px;
+      height: 150px;
+      animation: spin 10s linear infinite;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      width: 250px;
+      height: 250px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(85, 9, 9, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: transform 0.5s, background 0.5s;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: #f0f8ff;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+    nav {
+      background: #8b0000;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #8b0000;
+      color: white;
+      margin-top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>UNIVERSIDAD TÉCNICA DE AMBATO</h1>
+  <h2>Facultad de Ingeniería en Sistemas, Electrónica e Industrial - FISEI</h2>
+</header>
+<nav>
+    <a href="pagina1.html">Regresar al inicio</a>
+  </nav>
+
+<div class="logo-container">
+  <img src="uta.jpg" alt="Logo UTA-FISEI">
+</div>
+
+<section class="content">
+  <div class="card">
+    <h3>Ingeniería en Sistemas</h3>
+    <p>Formando profesionales en tecnología y software de vanguardia.</p>
+  </div>
+
+  <div class="card">
+    <h3>Ingeniería Electrónica</h3>
+    <p>Innovación en telecomunicaciones y sistemas electrónicos.</p>
+  </div>
+
+  <div class="card">
+    <h3>Ingeniería Industrial</h3>
+    <p>Optimización de procesos para la eficiencia empresarial.</p>
+  </div>
+
+  <div class="card">
+    <h3>Eventos y Noticias</h3>
+    <p>Participa en nuestros seminarios, ferias y congresos tecnológicos.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Universidad Técnica de Ambato - FISEI</p>
+</footer>
+
+</body>
+</html>

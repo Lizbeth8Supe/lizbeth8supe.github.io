@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FISEI - UTA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f0f0;
+            perspective: 1000px;
+            overflow-x: hidden;
+        }
+        nav {
+      background: #9e0008;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+        header {
+            text-align: center;
+            padding: 40px;
+            background: -webkit-linear-gradient(45deg, #360a0a, #ff3e3e);
+            color: white;
+            box-shadow: rgb(150, 150, 150) 5px 5px 20px 10px;
+            transition: transform 1s ease-in-out 0s;
+               } 
+        header:hover {
+             transform: rotate(16deg);
+              } 
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        h3 {
+            font-weight: normal;
+        }
+
+        .face2 {
+            transform: rotateZ(90deg) translateX(100%) rotateY(90deg);
+        }
+
+        body:hover .cube {
+            transform: rotateY(405deg) rotateX(360deg);
+        }
+
+        .imagenes {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        .imagenes img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        #filtro1 {
+            filter: sepia(1);
+        }
+
+        #filtro2 {
+            filter: grayscale(1);
+        }
+
+        #filtro3 {
+            filter: blur(2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: -webkit-radial-gradient(center, ellipse, #ffffff, #8b0000);
+            color: rgb(14, 1, 1);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FISEI - UTA</h1>
+        <h3>Facultad de Ingeniería en Sistemas, Electrónica e Industrial</h3>
+        <img src="uta.jpg" width="600" height="300" alt="Logo FISEI" />
+    </header>
+    <nav>
+        <a href="pagina1.html">Regresar</a>
+      </nav>
+
+    <section class="imagenes">
+        <img id="original" src="uta.jpg" alt="FISEI Imagen Original">
+        <img id="filtro1" src="utafisei2.jpg" alt="FISEI con sepia">
+        <img id="filtro2" src="utafisei1.jpg" alt="FISEI en blanco y negro">
+        <img id="filtro3" src="utafisei3.jpg" alt="FISEI con desenfoque">
+    </section>
+
+    <footer>
+        <p>© 2025 - Facultad de Ingeniería en Sistemas, Electrónica e Industrial - UTA</p>
+    </footer>
+
+</body>
+</html>

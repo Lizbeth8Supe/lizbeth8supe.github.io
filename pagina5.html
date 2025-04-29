@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>UTA - FISEI | Innovación y Excelencia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #631a1a, #812424);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: #8b0000;
+      color: white;
+      animation: slideIn 2s ease;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    nav {
+      background: #b71c1c;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd1d1;
+      transform: scale(1.2);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      background: #ffffff;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 1s, opacity 1s;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1) rotate(5deg);
+      opacity: 0.8;
+    }
+
+    .floating-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 50px 20px;
+      background: linear-gradient(45deg, #722929, #b63e3e);
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transition: transform 0.5s, background 0.5s;
+      animation: floatCard 5s ease-in-out infinite;
+    }
+
+    .card:hover {
+      transform: scale(1.05) rotate(3deg);
+      background: #ffe4e1;
+    }
+
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    footer {
+      background: #8b0000;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-size: 16px;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Universidad Técnica de Ambato</h1>
+  <h2>Facultad de Ingeniería en Sistemas, Electrónica e Industrial - FISEI</h2>
+</header>
+
+<nav>
+  <a href="pagina1.html">Regresar al inicio</a>
+</nav>
+
+<section class="gallery">
+  <img src="https://scontent.fatf4-1.fna.fbcdn.net/v/t39.30808-6/493901327_122172406616310056_5831111475560729656_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF7Oz23eYCULgDx6Ug5CCguZ6W7sB02YoFnpbuwHTZigVJ0Egw7ZoxV9CrNRxS3AMjwHlMtw0YfqgD9_YzjqiwW&_nc_ohc=ATTAvuMqQLkQ7kNvwF1Mgnx&_nc_oc=AdnrEcvczJp7ow7W5y6jWGywR6WS_lPIq09cRP9TgrG2460ijLpYh3rXYgKrhNuK6h0&_nc_zt=23&_nc_ht=scontent.fatf4-1.fna&_nc_gid=JV1N_cMi0NdNrvgl2wovgw&oh=00_AfGaWgPw0S64xG4oddc_cwVefDHe0Wo4LC7tyk65na54Dg&oe=6815F796" alt="Campus Universitario">
+  <img src="https://scontent.fatf4-1.fna.fbcdn.net/v/t39.30808-6/492710166_122172406652310056_1228677521989490711_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHx3Yb52oupa5xLLw7ZwPAnkr5Poc7mPjSSvk-hzuY-NOG86gSemDoOPjkzGnpy5sP7D7IovlNEmPWWTDlOFzRA&_nc_ohc=NAheYGTEbGkQ7kNvwHUh9rl&_nc_oc=AdlQWiue0a_3URefNw94ldbOIkJedesPrw5GezQKWtmvuhYf42muK3N0Vl4_YvCZ9ZU&_nc_zt=23&_nc_ht=scontent.fatf4-1.fna&_nc_gid=4VizpcjYWMsTPhxFDjEWQg&oh=00_AfHgM0B7ncx5lUBNP5HCWXcNjAg2YzlJeIhNWV1NEUMa4w&oe=68160E4C" alt="Estudiantes UTA">
+  <img src="https://scontent.fatf4-1.fna.fbcdn.net/v/t39.30808-6/492694749_122172406556310056_3574688445176625886_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE776MHMnDLbuNj4Oz8X2L-cW9FtKF54B5xb0W0oXngHlZAijmWAUPWVJJ2wKJeUKi5WUrbljYpBylRO4yFCWtH&_nc_ohc=Jw8RNehKnwsQ7kNvwEqOa6o&_nc_oc=Adl0sytrGpNYO2cfnL0sIS327v1rMxmONoPpWeOSFmc3VFb5LW-zz2h1HU2zw9rX1N4&_nc_zt=23&_nc_ht=scontent.fatf4-1.fna&_nc_gid=I7GW5Kii1Ni5I3yLBYEj4w&oh=00_AfGido-d3CnKQpLa9foKdH0JMBKaZxV1TKT7CbgdQ_t23g&oe=6815F1F0" alt="Ingeniería Industrial">
+  <img src="https://scontent.fatf4-1.fna.fbcdn.net/v/t39.30808-6/493005189_122172406586310056_4234345536467154709_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeENh18OEVqK4l9xTW-EDSqAXHlpQ0vbIjtceWlDS9siO92HlcezRY0xGYj2WQIfWPkHeBoBdgYzhCfBj-UoNq4x&_nc_ohc=cTaj69f2fTMQ7kNvwEd9-ba&_nc_oc=Adnx4SUsU_xIPbaiJIOhQ7_sHLLgiYZjBsoHc_OLoQY8WyaUiP2y3fVafxsP6I0EuWU&_nc_zt=23&_nc_ht=scontent.fatf4-1.fna&_nc_gid=hdkopKVmlUdj6r0qIkAd1A&oh=00_AfFuP5-fBwglrVg4dt1CfVkIN6sW0h9O7lNyJ6SSdhJltg&oe=681603AE" alt="Electrónica y Automatización">
+</section>
+
+
+<footer>
+  © 2025 FISEI - Universidad Técnica de Ambato
+</footer>
+
+</body>
+</html>
